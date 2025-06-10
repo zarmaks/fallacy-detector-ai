@@ -28,6 +28,29 @@ Combine classical logic with modern AI to create an educational tool that:
 3. **Explain** - Shows exactly what's wrong and why it matters
 4. **Educate** - Helps you recognize similar patterns in the future
 
+## Technical Architecture
+
+This system uses a **dual-chain AI agent architecture** for comprehensive analysis:
+
+### 🤖 **AI Agent Design**
+- **Chain 1: Fallacy Detection** - Scans text for patterns matching classical logical fallacies
+- **Chain 2: Educational Explanation** - Provides detailed explanations of why the reasoning is flawed
+
+### 🔄 **Processing Pipeline**
+1. **Article Retrieval** - Uses Serper API to find relevant news articles
+2. **Content Extraction** - Parses and cleans article text
+3. **Dual-Chain Analysis**:
+   - Detection chain identifies potential fallacies
+   - Explanation chain provides educational context
+4. **Result Synthesis** - Combines findings into comprehensive report
+
+### 🧠 **AI Models**
+- **Primary Model**: OpenAI GPT-4o-mini (configurable)
+- **Fallacy Database**: 19 classical Aristotelian fallacies
+- **Context Awareness**: Maintains article context throughout analysis
+
+This architecture ensures both **accuracy in detection** and **educational value in explanations**.
+
 ## Installation
 
 1. Clone repository:
