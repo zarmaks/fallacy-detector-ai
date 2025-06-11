@@ -17,7 +17,7 @@ def main():
     )
     parser.add_argument("topic", help="Search topic for news articles")
     parser.add_argument("--domain", default="", help="Domain to search within (e.g., 'cnn.com')")
-    parser.add_argument("--model", default="gpt-4o-mini", help="OpenAI model to use")
+    parser.add_argument("--model", default="gpt-4.1-nano", help="OpenAI model to use")
     parser.add_argument("--output", help="Output file to save results")
     parser.add_argument("--max-articles", type=int, default=5, help="Number of articles to analyze")
     parser.add_argument("--verbose", action="store_true", help="Show detailed output")

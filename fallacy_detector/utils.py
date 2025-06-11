@@ -64,9 +64,13 @@ Timestamp: {result_data.get('timestamp', datetime.now())}
 
 LOGICAL FALLACY ANALYSIS:
 {'-'*25}
-{result_data.get('analysis', 'No analysis available')}
+{result_data.get('detected_fallacies', 'No analysis available')}
 
-ARTICLE SUMMARY:
+EDUCATIONAL EXPLANATIONS:
+{'-'*25}
+{result_data.get('educational_explanations', 'No explanations available')}
+
+SYNTHESIS REPORT:
 {'-'*15}
-{result_data.get('summary', 'No summary available')}
+{result_data.get('synthesized_result', 'No synthesis available')}
 """
